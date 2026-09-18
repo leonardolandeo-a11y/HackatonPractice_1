@@ -13,5 +13,13 @@ public class ErrorResponse {
     private String message;
     private Instant timeStamp;
     private String path;
+
+    public ErrorResponse(String error, String message, Instant timeStamp, String path) {
+        this.error = error;
+        this.message = message;
+        this.timeStamp = timeStamp;
+        this.path = path;
+    }
+
     protected ErrorResponse(){}
 }
